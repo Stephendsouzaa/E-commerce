@@ -1,0 +1,761 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+h1 {
+  color: #fff; /* Set text color to white */
+  padding: 10px;
+  margin: 10px;
+  background-color:; /* Set background color */
+  padding: 10px; /* Add padding for better visibility */
+  border-radius: 8px; /* Add rounded corners */
+  border-color:white;
+  
+  animation: colorChange 2s infinite; /* Apply the colorChange animation */
+}
+
+@keyframes colorChange {
+  0% {
+    color: #3498db;
+  }
+  25% {
+    color: #e74c3c;
+  }
+  50% {
+    color: #2ecc71;
+  }
+  75% {
+    color: #f39c12;
+  }
+  100% {
+    color: #3498db; /* Back to the initial color */
+  }
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background:black;
+    border: 1px solid blue; /* Add a white border */
+   
+  }
+}
+.heading ul {
+  display: flex;
+}
+.logo a {
+  color: white;
+  transition-duration: 1s;
+  font-weight: 800;
+}
+.logo a:hover {
+  color: rgb(240, 197, 6);
+  transition-duration: 1s;
+}
+.heading ul li {
+  list-style: none;
+}
+.heading ul li a {
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  color: yellow;
+  margin: 2px 14px;
+  font-size: 8px;
+  transition-duration: 1s;
+}
+.heading ul li a:active {
+  color: red;
+}
+.heading ul li a:hover {
+  color: rgb(243, 168, 7);
+  transition-duration: 1s;
+}
+
+.heading ul li a::before {
+  content: "";
+  height: 2px;
+  width: 0px;
+  color:yellow;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transition-duration: 1s;
+}
+.heading ul li a:hover::before {
+  width: 100%;
+  transition-duration: 1s;
+  background-color: rgb(243, 168, 7);
+}
+#input {
+  height: 30px;
+  width: 300px;
+  text-decoration: none;
+  border: 0px;
+  padding: 5px;
+}
+.logo a {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  text-decoration: none;
+}
+ion-icon {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: black;
+}
+ion-icon:hover {
+  cursor: pointer;
+}
+.search a {
+  display: flex;
+}
+header a ion-icon {
+  position: relative;
+  right: 3px;
+}
+
+.img-slider img {
+  height: 10%;
+  width: 100%;
+  background-color:royalblue;
+}
+@keyframes slide {
+  0% {
+    left: 0px;
+  }
+  15% {
+    left: 0px;
+  }
+  20% {
+    left: -1080px;
+  }
+  32% {
+    left: -1080px;
+  }
+  35% {
+    left: -2160px;
+  }
+  47% {
+    left: -2160px;
+  }
+  50% {
+    left: -3240px;
+  }
+  63% {
+    left: -3240px;
+  }
+  66% {
+    left: -4320px;
+  }
+  79% {
+    left: -4320px;
+  }
+  82% {
+    left: -5400px;
+  }
+  100% {
+    left: 1000px;
+  }
+}
+.img-slider {
+  display: flex;
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transition-duration: 2s;
+}
+.-img {
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+  }
+.heading1 {
+  opacity: 0;
+}
+.search {
+  display: flex;
+  position: relative;
+}
+.section1 {
+  width: 1080px;
+  overflow: hidden;
+
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.section2 .container {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px auto;
+}
+.section2 .container .items {
+  margin: 10px;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border: 2.5px solid black;
+  border-radius: 12px;
+}
+.section2 .container .items .name {
+  text-align: center;
+  background-color: rgb(240, 197, 6);
+  height: 25px;
+  padding-top: 4px;
+  color: black;
+  margin: 0;
+}
+.section2 .container .items .price {
+  float: left;
+  padding-left: 10px;
+  display: block;
+  width: 100%;
+  color: rgb(255, 0, 0);
+  font-weight: 650;
+}
+.section2 .container .items .info {
+  padding-left: 10px;
+  color: rgb(243, 168, 7);
+}
+.section2 .container .items .img img {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  border-radius: 12px;
+  transition-duration: 0.8s;
+}
+.section2 .container .items .img {
+  overflow: hidden;
+  margin: 0;
+}
+.section2 .container .items:hover .img img {
+  transform: scale(1.2);
+  transition-duration: 0.8s;
+  border-radius: 12px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  align-items: center;
+  color: black;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-size:35px;
+  margin-top: 15px;
+  
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  color: black;
+  flex-wrap: wrap;
+}
+.social-media a {
+  color: black;
+  margin: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: black;
+}
+.social-media a ion-icon {
+  color: white;
+  background-color: black;
+}
+.social-media a:hover ion-icon {
+  color: red;
+  transform: translateY(5px);
+}
+.footer2 {
+  display: flex;
+  width: 100%;
+  font-size:25px;
+  border: 5px solid blue;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.footer0 {
+  font-weight: 1200;
+  transition-duration: 1s;
+}
+.footer0:hover {
+  color: rgb(243, 168, 7);
+}
+.footer2 .heading {
+  font-weight: 900;
+  font-size: 18px;
+}
+.footer3 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  border: 1px solid blue;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer2 .heading:hover {
+  color: rgb(243, 168, 7);
+}
+.footer2 .div:hover {
+  transform: scale(1.05);
+}
+.footer3 h4 {
+  margin: 0 10px;
+}
+.footer2 div {
+  margin: 10px;
+}
+.menu {
+  visibility: hidden;
+}
+.heading1 .ham:active {
+  color: red;
+}
+.items {
+  overflow: hidden;
+}
+.ham,
+.close {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  .heading ul li {
+    display: none;
+  }
+
+  .items {
+    transform: scale(0.9);
+  }
+  .img-slider img {
+    height: 60vw;
+    width: 80vw;
+  }
+  .ham:active {
+    color: red;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu a ion-icon {
+    position: absolute;
+  }
+
+  @keyframes slide1 {
+    0% {
+      left: 0vw;
+    }
+    15% {
+      left: 0vw;
+    }
+    20% {
+      left: -80vw;
+    }
+    32% {
+      left: -80vw;
+    }
+    35% {
+      left: -160vw;
+    }
+    47% {
+      left: -160vw;
+    }
+    50% {
+      left: -240vw;
+    }
+    63% {
+      left: -240vw;
+    }
+    66% {
+      left: -320vw;
+    }
+    79% {
+      left: -320vw;
+    }
+    82% {
+      left: -400vw;
+    }
+    100% {
+      left: 0vw;
+    }
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    align-items: center;
+    justify-content: center;
+    opacity: 100;
+  }
+  .close {
+    z-index: 34;
+
+    color: white;
+    background-color: black;
+  }
+  .close:active {
+    color: red;
+  }
+  .menu ul li {
+    list-style: none;
+    margin: 20px;
+    border-top: 3px solid white;
+    width: 80%;
+    text-align: center;
+
+    padding-top: 10px;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    padding-top: 10px;
+    color: white;
+    font-weight: 900;
+  }
+  .menu ul li a:hover {
+    color: rgb(240, 197, 6);
+  }
+  .img-slider {
+    display: flex;
+    float: left;
+    position: relative;
+    width: 80%;
+    height: 60%;
+    animation-name: slide1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition-duration: 2s;
+  }
+  .section1 {
+    width: 80%;
+    overflow: hidden;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+  }
+
+  .heading1 {
+    opacity: 1;
+    position: relative;
+    bottom: 8px;
+  }
+  .search a {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .heading1 .ham {
+    background-color: black;
+    color: white;
+  }
+  #input {
+    width: 200px;
+    flex-shrink: 2;
+  }
+  header {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .heading ul li {
+    display: none;
+  }
+  .heading1 {
+    opacity: 111;
+
+    bottom: 8px;
+  }
+
+  header {
+    height: 250px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+  #input {
+    width: 150px;
+  }
+  .close {
+    z-index: 34;
+  }
+
+  .search a {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+/* Buy Button Style with Hover and Focus Animation */
+.buy-button {
+  background-color: #007BFF;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.buy-button:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box-shadow on focus */
+}
+
+/* Craft Button Style with Hover and Focus Animation */
+.craft-button {
+  background-color: #28A745;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.craft-button:hover {
+  background-color: #1E7E34;
+  transform: scale(1.05);
+}
+
+.craft-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Button Pressed Effect */
+.buy-button:active,
+.craft-button:active {
+  transform: scale(0.95); /* Slight scaling effect when the button is pressed */
+}
+
+/* Button Disabled State */
+.buy-button:disabled,
+.craft-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Add a Transition for Button Text */
+.buy-button, .craft-button {
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.buy-button:hover, .craft-button:hover {
+  color: red; /* Change text color on hover */
+}
+@keyframes colorChange {
+  0% { color: #007BFF; } /* Start with one color */
+  25% { color: #FF5733; } /* Change to another color at 25% */
+  50% { color: #FFC300; } /* Change to another color at 50% */
+  75% { color: #33FF55; } /* Change to another color at 75% */
+  100% { color: #007BFF; } /* Go back to the initial color at 100% */
+}
+
+/* Style for the navigation menu */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+/* Style for individual menu items */
+li {
+  margin-right: 20px; /* Adjust the spacing between menu items */
+  animation: colorChange 8s infinite; /* Apply the color change animation */
+}
+
+/* Style for menu item links */
+a {
+  text-decoration: none;
+  color: yellow; /* Initial color */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Add a color transition effect */
+}
+
+/* Style for menu item links on hover */
+a:hover {
+  color: #FF5733; /* Change the color on hover */
+}
+
+/* Style for the "under" class (you can adjust it as needed) */
+.under {
+  text-decoration: underline;
+}
+
+.header a:hover {
+  color: #ff6600; /* Change font color on hover */
+}
+
+/* Add a border to the items in the section */
+.section .items {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.section .items:hover {
+  border-color: #ff6600; /* Change border color on hover */
+}
+
+/* Style the "Buy" and "Craft" buttons */
+.buy-button, .craft-button {
+  background-color: #ff6600;
+  color: yellow;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.buy-button:hover, .craft-button:hover {
+  background-color: #333; /* Change background color on hover */
+}
+
+/* Style the "Bought" and "Crafted" records */
+.buy-record, .craft-record {
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* Center the container divs and add colors */
+.buy-record, .craft-record {
+  border: 2px solid #FF5733; /* Red-Orange border */
+  padding: 15px;
+  margin: 10 auto; /* Center horizontally */
+  display: inline-block;
+  display:center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  background-color: white; /* Light Gray background */
+  width: 200px; /* Set a fixed width for centering */
+  box-shadow: 0 5px 15px rgba(0, 0, 012, 0.2); /* Add a subtle box shadow */
+  transition: transform 0.2s ease; /* Add a transformation animation */
+}
+
+/* Hover effect: Slightly scale on hover */
+.buy-record:hover, .craft-record:hover {
+  transform: scale(1.05);
+}
+
+/* Style for the span elements */
+#buy-count, #craft-count {
+  font-weight: bold;
+  color: red; /* Green color for the count */
+  font-size: 24px; /* Larger font size for better visibility */
+}
+
+/* Animation for count changes */
+#buy-count, #craft-count {
+  animation: pulse 1s infinite alternate; /* Add a pulsating animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.img {
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+  }
+.discount-banner {
+    background-color: royalblue; /* Background color */
+    color: red; /* Text color */
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    font
+  }
+
+  .discount-banner p {
+    font-size: 37px;
+    margin: 10;
+    border: 5px solid red; /* Add a white border */
+    display: inline-block;
+    padding: 10px;
+    background-color: yellow; /* Change text color */
+    opacity: 100%; /* Start with 0 opacity */
+    animation: printText 3s forwards; /* Add printing animation */
+  }
+  }
+
+  .animated-text {
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+/* Style for the profile image */
+.profile-image {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border-radius: 50%; /* Creates a circular shape for the image */
+  border: 2px solid yellow; /* Adds a white border around the image */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow to the image */
+  display: block;
+  margin: 0 auto 10px; /* Centers the image and adds some space below it */
+}
+
+/* Style for the associated text (assuming you want to style the text beside the image) */
+.profile-image + b {
+  display: block; /* Makes the text display as a block element (below the image) */
+  text-align: center; /* Centers the text */
+  font-weight: bold; /* Makes the text bold */
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  color: #333; /* Text color */
+}
